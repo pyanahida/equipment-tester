@@ -1,0 +1,38 @@
+body {
+    color: #000;
+    background-color: #FFF;
+}
+
+body.test-page {
+    margin: 0;
+    padding: 0;
+}
+
+button.index, div.btn {
+    font-size: 16px;
+    
+    border: 1px solid #000;
+    background-color: #FFF;
+    border-radius: 0px;
+    
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: -1px;
+    
+    text-align: center;
+}
+
+a.black {
+    color: #000;
+    text-decoration: none;
+}
+
+div.full {
+    width: 100vw;
+    height: 100vh;
+}
+
+div.test-red      { background-color: #F00; }
+div.test-green    { background-color: #0F0; }
+div.test-blue     { background-color: #00F; }
+div.test-white    { background-color: #FFF; }

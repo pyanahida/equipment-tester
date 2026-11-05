@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Screen display test</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="test-page">
+<div class="test-red full" id="test"></div>
+<script>
+let i = 0;
+const colors = ["red", "green", "blue", "white"];
+const test = document.getElementById('test');
+
+test.addEventListener('click', () => {
+    if (i < 3) {
+        i++;
+        test.classList.remove("test-" + colors[i-1]);
+        test.classList.add("test-" + colors[i]);
+    }
+    else {
+        alert("Test completed.");
+        window.location.href = 'index.html';
+    }
+    
+});
+</script>
+</body>
+</html>
